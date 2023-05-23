@@ -1,0 +1,221 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+}
+
+.right {
+    flex: 1;
+    position: relative;
+    /* background-color: var(--orange); */
+}
+
+.the-add {
+    margin-top: 4rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.the-add>span{
+    z-index: 2;
+}
+
+.the-add>div{
+    position: absolute;
+    background-color: var(--colormy);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 6.5rem;
+    font-weight: bold;
+    color: var(--colormy);
+    text-overflow: inherit;
+}
+
+.main-text>div:nth-of-type(2){
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1.2px;
+    width: 80%;
+    color: white;
+
+}
+
+.figs {
+    display: flex;
+    gap: 5rem;
+  }
+  
+  .fig > div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .figs > div > span:nth-of-type(1) {
+    color: white;
+    font-size: 2rem;
+  }
+  
+  .figs > div > span:nth-of-type(2) {
+    color: var(--gray);
+    text-transform: uppercase;
+    margin-top: 0.5rem; /* add this line to create some spacing between the two spans */
+  }
+  
+
+  .main-buttons {
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+
+  }
+
+  .main-buttons>:nth-child(1){
+    color: white;
+    background-color: var(--colormy);
+    width: 8rem;
+  }
+
+  .main-buttons>:nth-child(2){
+    color: var(--colormy);
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid var(--colormy);
+  }
+
+  .right>.btn{
+    position: absolute;
+    right: 3rem;top: 2rem;color: white;background: var(--colormy);
+  }
+  
+
+  .basket-image {
+    position: absolute;
+    top: 13rem;
+    right: 1rem;
+    width: 23rem;
+  }
+
+  .blur-main{
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+    
+  }
+
+  .popup{
+    position: absolute;height: fit-content;width: 30%;
+    top: 50%;left: 50%;transform: translate(-50%,-50%);
+    border-radius: 10px;
+    color: white;
+    background-color: var(--colormy);
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .close-btn{
+    position: absolute;top: 19px;right: 10px;font-size: 16px;background-color: transparent;
+    border: none;cursor: pointer;
+    font-weight: bolder;color: white;
+  }
+  .popup>ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .popup>ul>li{
+    list-style-type: none;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .main{
+      flex-direction: column;
+    }
+    .blur-main{
+      width: 14rem;
+    }
+    .the-add{
+      margin-top: 0;
+      font-size: small;
+      align-items: center;
+      transform: scale(0.8);
+    }
+    .main-text{
+      margin-top: -2rem;
+      font-size: xx-large;
+      align-items: center;
+      justify-content: center;
+    }
+    .main-text>div:nth-of-type(2){
+      font-size: small;
+      font-weight: 200;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .figs>div>span:nth-of-type(1){
+      font-size: large;
+    }
+    .figs > div > span:nth-of-type(2){
+      font-size: small;
+    }
+    .figs{
+      margin-top: -5rem;
+      display: flex;
+      justify-content: center;
+    }
+    .figs > div {
+      text-align: cneter;flex-basis: 33%;
+    }
+    .right{
+      position: relative;
+    }
+    .basket-image{
+      position: relative;
+      width: 15rem;left: 4rem;top: 4rem;
+      align-self: center;
+    }
+    .main-buttons{
+      margin-top: 0;
+      align-items: center;
+      justify-content: center;
+    }
+    .figs{
+      margin-bottom: 0;
+    }
+    .popup{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+    }
+
+
+  }
+
+  

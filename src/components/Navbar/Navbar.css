@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 10rem;
+    height: 3rem;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+}
+.nav>li{
+    transition: color 0.2s ease-in-out;
+}
+.nav>li:hover{
+    transform: scale(1.5);
+    cursor: pointer; 
+    color: var(--colormy);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:768px) {
+    .navbar>:nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+    .nav{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
+}

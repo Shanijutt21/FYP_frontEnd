@@ -1,0 +1,24 @@
+use Cases:(buyer)
+--managing Buyer
+--view available waste
+--place bid
+--view bidding results
+--notifications
+--accounts:
+----signup
+----update
+----delete
+
+use Cases:(seller)
+--record waste
+--view summary
+--quote bidding price
+--view bidding results
+--accounts:
+----signup
+----update
+----delete
+
+use Cases:(admin)
+admin have access to almost everything...
+
